@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "3b4377e0-8d28-4180-adc4-b26407cb6b12",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24333421"
+	},
+	"item": [
+		{
+			"name": "Create a board on trello",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Anoops&key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anoops"
+						},
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete the board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636cb102a83de800caafcb70?key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636cb102a83de800caafcb70"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a list on board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63d7c2ebf811fb2e05848fa7/lists?name=NEW LISTsfdsf&key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63d7c2ebf811fb2e05848fa7",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "NEW LISTsfdsf"
+						},
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calender on board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636cb1929960670472ff7d08/calendarKey/generate?key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636cb1929960670472ff7d08",
+						"calendarKey",
+						"generate"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card on list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63d7c300c5c24d5301c6cc6f/cards?key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63d7c300c5c24d5301c6cc6f",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating lable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636cb1929960670472ff7d08/labels?name=NEW LABLEfdsffdgdgd&color=red&key=b35589d0275ccb477a39b98319cae09a&token=5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636cb1929960670472ff7d08",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "NEW LABLEfdsffdgdgd"
+						},
+						{
+							"key": "color",
+							"value": "red"
+						},
+						{
+							"key": "key",
+							"value": "b35589d0275ccb477a39b98319cae09a"
+						},
+						{
+							"key": "token",
+							"value": "5b040345289137c442918eb03cad650a98bd397bf67613182f40a6b2908dec1b"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

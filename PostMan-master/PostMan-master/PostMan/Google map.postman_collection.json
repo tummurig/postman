@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "7f098380-64f0-4c77-aa33-cfbf06894847",
+		"name": "Google map",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24333421"
+	},
+	"item": [
+		{
+			"name": "Add a location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"location\":{\r\n\"lat\" : -38.383494,\r\n\"lng\" : 33.427362\r\n},\r\n\"accuracy\":50,\r\n\"name\":\"Frontline house\",\r\n\"phone_number\":\"(+91) 983 893 3937\",\r\n\"address\" : \"29, side layout, cohen 09\",\r\n\"types\": [\"shoe park\",\"shop\"],\r\n\"website\" : \"http://google.com\",\r\n\"language\" : \"French-IN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://216.10.245.166/maps/api/place/add/json?key= qaclick123",
+					"protocol": "http",
+					"host": [
+						"216",
+						"10",
+						"245",
+						"166"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"add",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": " qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  a location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"place_id\":\"eeba29b6cd93838215846e8100bd7e3b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://216.10.245.166/maps/api/place/delete/json?key=qaclick123",
+					"protocol": "http",
+					"host": [
+						"216",
+						"10",
+						"245",
+						"166"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"delete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
